@@ -3,6 +3,10 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import pandas as pd
 from torch.nn import Softmax
 from torch import sort
+import torch
+
+
+torch.classes.__path__ = [] # Костыль для streamlit cloud, иначе не работает
 
 
 @st.cache_resource  # кэширование
