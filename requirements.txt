@@ -1,4 +1,4 @@
 pandas
 transformers
 torch
-streamlit
+streamlit>=1.8.1
